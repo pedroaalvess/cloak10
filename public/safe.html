@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Segura</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .info {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🛡️</div>
+        <h1>Página Segura</h1>
+        <p>
+            Esta é uma página de segurança. Se você foi redirecionado para cá, 
+            significa que sua requisição foi identificada como potencialmente 
+            suspeita pelo nosso sistema de proteção.
+        </p>
+        <a href="/" class="btn">Voltar ao Início</a>
+        
+        <div class="info">
+            <strong>Informações de Segurança:</strong><br>
+            • Seu IP foi registrado para análise<br>
+            • Esta ação é automática e temporária<br>
+            • Entre em contato se acredita que isso é um erro
+        </div>
+    </div>
+
+    <script>
+        // Log da visita à página segura
+        console.log('Página segura acessada:', new Date().toISOString());
+        
+        // Opcional: enviar métrica para analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'safe_page_visit', {
+                'event_category': 'security',
+                'event_label': 'safe_page'
+            });
+        }
+    </script>
+</body>
+</html>
