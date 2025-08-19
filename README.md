@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛡️ Cloaker Avançado - Anti-Detectável
 
 Um cloaker 100% eficaz e anti-detectável para Google Ads e Facebook Ads, com camuflagem avançada contra IPs, bots, crawlers e sistemas de detecção.
@@ -373,3 +374,6 @@ Contribuições são bem-vindas! Por favor:
 ---
 
 **Desenvolvido com ❤️ para a comunidade de marketing digital**
+=======
+# cloak10
+>>>>>>> b70c018b8a1789c0623d3b142bd6f9f51cd6324b
